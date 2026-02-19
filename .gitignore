@@ -1,0 +1,160 @@
+# ==============================================================================
+# PYTHON
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.pyd
+MANIFEST
+
+# ==============================================================================
+# ENTORNOS VIRTUALES
+# ==============================================================================
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-env/
+
+# ==============================================================================
+# JUPYTER
+# ==============================================================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ==============================================================================
+# ML / PESOS Y CHECKPOINTS (crítico: pueden pesar decenas de GB)
+# ==============================================================================
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.pb
+*.h5
+*.hdf5
+*.pkl
+*.npy
+*.npz
+*.msgpack
+
+# Directorios típicos de salida de entrenamiento
+checkpoints/
+ckpt/
+output/
+outputs/
+runs/
+logs/
+wandb/
+mlruns/
+lightning_logs/
+saved_models/
+model_weights/
+pretrained/
+
+# HuggingFace cache local
+.cache/
+hub/
+
+# ==============================================================================
+# DATOS (videos, imágenes, audio — no van a git)
+# ==============================================================================
+data/
+datasets/
+raw_data/
+processed_data/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.wav
+*.flac
+*.mp3
+*.aac
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# ==============================================================================
+# RESULTADOS Y EXPERIMENTOS
+# ==============================================================================
+results/
+predictions/
+eval_results/
+inference_results/
+experiments/
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.feather
+*.arrow
+
+# ==============================================================================
+# SLURM / HPC
+# ==============================================================================
+*.out
+*.err
+slurm_*.log
+slurm-*.out
+sbatch_*.sh
+
+# ==============================================================================
+# SECRETOS Y VARIABLES DE ENTORNO
+# ==============================================================================
+.env
+.env.*
+*.env
+secrets.yaml
+secrets.yml
+credentials.json
+api_keys.txt
+.netrc
+
+# ==============================================================================
+# IDEs Y EDITORES
+# ==============================================================================
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.spyderproject.cfg
+.ropeproject
+
+# ==============================================================================
+# SISTEMA OPERATIVO
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==============================================================================
+# TEMPORALES Y BASURA
+# ==============================================================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.nfs*
+core
