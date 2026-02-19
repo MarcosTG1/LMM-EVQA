@@ -121,15 +121,15 @@ def inference_single_video(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Test engagement prediction for a single video")
     parser.add_argument('--model-path', default='/root/workspace/cvuaggk7v38s73dgjft0/videollama2_EVQA_weights_mse', 
-                       help='Path to the trained model weights')
+                    help='Path to the trained model weights')
     parser.add_argument('--modal-type', default='av', choices=["a", "v", "av"], 
-                       help='Modal type: a=audio only, v=video only, av=audio-visual')
+                    help='Modal type: a=audio only, v=video only, av=audio-visual')
     parser.add_argument('--video-path', required=True, 
-                       help='Path to the video file')
+                    help='Path to the video file')
     parser.add_argument('--title', default=None, 
-                       help='Title of the video (optional)')
+                    help='Title of the video (optional)')
     parser.add_argument('--description', default=None, 
-                       help='Description of the video content (optional)')
+                    help='Description of the video content (optional)')
     
     args = parser.parse_args()
     
