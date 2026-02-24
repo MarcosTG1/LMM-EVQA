@@ -5,9 +5,9 @@ from sklearn.model_selection import train_test_split
 from decord import VideoReader, cpu
 
 # Define paths
-VIDEO_DIR = "/root/workspace/cvuaggk7v38s73dgjft0/EVQA_SnapUGC/train_dataset/train_videos"
-CSV_PATH = "train_data.csv"
-OUTPUT_TRAIN = "train_qwenvl.json"
+VIDEO_DIR = "/media/5tbraid/data/martugue/SnapUGC/train_videos"
+CSV_PATH = "/media/5tbraid/data/martugue/SnapUGC/train_data.csv"
+OUTPUT_TRAIN = "/media/2tbraid/martugue/TFG/data/train_qwenvl.json"
 
 def check_video(video_path):
     """检查视频文件是否存在且可以正常读取
