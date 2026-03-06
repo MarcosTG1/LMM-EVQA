@@ -6,7 +6,6 @@ from decord import VideoReader, cpu
 
 # Define paths
 VIDEO_DIR = "/root/workspace/cvuaggk7v38s73dgjft0/EVQA_SnapUGC/train_dataset/train_videos"
-AUDIO_DIR = "/root/workspace/cvuaggk7v38s73dgjft0/EVQA_SnapUGC/train_dataset/train_audios"
 CSV_PATH = "train_data.csv"
 OUTPUT_TRAIN = "train.json"
 
@@ -63,7 +62,6 @@ def create_dataset_entry(row):
         "id": row["Id"],
         "ECR": row["ECR"]*100,
         "video": video_path,
-        "audio": os.path.join(AUDIO_DIR, f"{row['Id']}.wav"),
         "conversations": create_conversation(row["Title"], row["Description"])
     }
 
